@@ -1,8 +1,11 @@
 from abc import ABC, abstractmethod
 
 class Solution:
+    def __init__(self, **kwargs) -> None:
+        self.__dict__.update(kwargs)
+
     @abstractmethod
-    def solve(self, data):
+    def solve(self, data, is_sample, **kwargs):
         raise NotImplemented()
     
 _solutions = {}

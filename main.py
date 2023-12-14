@@ -1,6 +1,9 @@
 from inquirer import prompt,List
 from aoc23.solution import get_solutions
 import aoc23.day1
+import aoc23.day2
+import aoc23.day3
+
 
 def run_solution(key:tuple, sample:bool):
     day, part = key
@@ -11,7 +14,7 @@ def run_solution(key:tuple, sample:bool):
         data = f.readlines()
 
     print(f"Day: {day}, Part: {part}")
-    print(f"Solution: {solution.solve(data)}")
+    print(f"Solution: {solution.solve(data,sample)}")
 
 def main():
     questions = [List(
