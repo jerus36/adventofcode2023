@@ -56,7 +56,7 @@ add_solution(3, 1, Day3Part1())
 class Day3Part2(Solution):
     def solve(self, data, is_sample):
         symbols,parts = find_points(data)
-        ratios = list(find_gear_ratios(parts, symbols))
+        ratios = find_gear_ratios(parts, symbols)
         return sum(ratios)
 
 add_solution(3, 2, Day3Part2())
