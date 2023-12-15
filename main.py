@@ -3,13 +3,15 @@ from aoc23.solution import get_solutions
 import aoc23.day1
 import aoc23.day2
 import aoc23.day3
+import aoc23.day4
+
 
 
 def run_solution(key:tuple, sample:bool):
     day, part = key
     solution = get_solutions()[key]
     
-    fname = f"input/d{day}p{part}.{'sample' if sample else 'full'}.txt"
+    fname = f"input/d{day}.{'sample' if sample else 'full'}.txt"
     with open(fname) as f:
         data = f.readlines()
 
